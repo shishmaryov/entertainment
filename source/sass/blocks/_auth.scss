@@ -10,6 +10,12 @@
         top: 11px;
       }
     }
+
+    .button--go {
+      &::before {
+        top: 12px;
+      }
+    }
   }
 
   &__password-input {

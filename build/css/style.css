@@ -631,6 +631,8 @@ body {
   margin-top: 52px; }
   .auth__buttons .button--back::before {
     top: 11px; }
+  .auth__buttons .button--go::before {
+    top: 12px; }
 
 .auth__password-input {
   margin-bottom: 0; }
