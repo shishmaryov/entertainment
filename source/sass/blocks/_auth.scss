@@ -1,0 +1,18 @@
+.auth {
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+
+    .button--back {
+      &::before {
+        top: 11px;
+      }
+    }
+  }
+
+  &__password-input {
+    margin-bottom: 0;
+  }
+}
