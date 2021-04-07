@@ -6,20 +6,16 @@
   }
 
   &__buttons {
-    margin-left: 60px;
-    margin-right: 60px;
     align-items: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
 
     .button--back {
-      position: absolute;
-      left: 60px;
-      bottom: 28px;
     }
 
     .button--go {
-      position: absolute;
-      right: 60px;
-      bottom: 22px;
     }
   }
 }

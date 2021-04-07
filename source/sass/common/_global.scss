@@ -61,26 +61,27 @@ body {
   }
 
   &--go {
+    position: relative;
     width: 137px;
     height: 36px;
     padding: 0;
+    padding-right: 10px;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
     background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
     border: none;
     border-radius: 20px;
-    position: relative;
 
     &::after {
       content: url("../img/icons/arrow-go.svg");
       position: absolute;
       top: 0;
+      top: 9px;
       right: 0;
+      right: 35px;
       width: 7.28px;
       height: 12px;
-      right: 35px;
-      top: 9px;
     }
   }
 }
@@ -134,21 +135,46 @@ body {
   background-image: url("../img/icons/custom-checbox.svg");
 }
 
-/* стили при наведении курсора на checkbox */
-.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-
-}
-/* стили для активного состояния чекбокса (при нажатии на него) */
-.custom-checkbox:not(:disabled):active+label::before {
-}
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus+label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-.custom-checkbox:focus:not(:checked)+label::before {
-}
+
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled+label::before {
   background-color: #e9ecef;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 215px;
+  height: 179px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    align-items: center;
+    width: 65px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 35px;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+    border-radius: 8px;
+    line-height: 100%;
+
+    &--none {
+      font-size: 0;
+      background: #FFF;
+    }
+
+    &--delete {
+      background: none;
+      padding-top: 5px;
+    }
+  }
 }

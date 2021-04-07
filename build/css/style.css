@@ -17,7 +17,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -428,26 +428,27 @@ body {
     height: 11.42px; }
 
 .button--go {
+  position: relative;
   width: 137px;
   height: 36px;
   padding: 0;
+  padding-right: 10px;
   font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
   background: -webkit-gradient(linear, right top, left top, from(#FFBA10), to(#FC7712));
   background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
   border: none;
-  border-radius: 20px;
-  position: relative; }
+  border-radius: 20px; }
   .button--go::after {
     content: url("../img/icons/arrow-go.svg");
     position: absolute;
     top: 0;
+    top: 9px;
     right: 0;
-    width: 7.28px;
-    height: 12px;
     right: 35px;
-    top: 9px; }
+    width: 7.28px;
+    height: 12px; }
 
 .label__text {
   margin-top: 0;
@@ -515,36 +516,61 @@ body {
 .custom-checkbox:checked + label::before {
   background-image: url("../img/icons/custom-checbox.svg"); }
 
-/* стили при наведении курсора на checkbox */
-/* стили для активного состояния чекбокса (при нажатии на него) */
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus + label::before {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled + label::before {
   background-color: #e9ecef; }
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 215px;
+  height: 179px;
+  margin-left: auto;
+  margin-right: auto; }
+  .keyboard__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 65px;
+    height: 39px;
+    font-weight: 600;
+    font-size: 35px;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFBA10), to(#FC7712));
+    background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+    border-radius: 8px;
+    line-height: 100%; }
+    .keyboard__item--none {
+      font-size: 0;
+      background: #FFF; }
+    .keyboard__item--delete {
+      background: none;
+      padding-top: 5px; }
 
 .registration-1-page__inputs {
   margin-left: 21px;
   margin-right: 21px; }
 
 .registration-1-page__buttons {
-  margin-left: 60px;
-  margin-right: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-  .registration-1-page__buttons .button--back {
-    position: absolute;
-    left: 60px;
-    bottom: 28px; }
-  .registration-1-page__buttons .button--go {
-    position: absolute;
-    right: 60px;
-    bottom: 22px; }
+          align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .container {
   margin-top: 20px;
@@ -589,7 +615,8 @@ body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 10px; }
   .reg-1__label--partner .label__text {
     margin-bottom: 0;
     margin-left: 9px; }
