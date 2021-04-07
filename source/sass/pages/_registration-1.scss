@@ -1,0 +1,25 @@
+.registration-1-page {
+
+  &__inputs {
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+
+  &__buttons {
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+
+    .button--back {
+      position: absolute;
+      left: 60px;
+      bottom: 28px;
+    }
+
+    .button--go {
+      position: absolute;
+      right: 60px;
+      bottom: 22px;
+    }
+  }
+}

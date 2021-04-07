@@ -1,0 +1,154 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.h1 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 19px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #717171;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -19px;
+    width: 9px;
+    height: 23px;
+    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    border-radius: 5px;
+
+  }
+}
+
+.button {
+
+  &--back {
+    position: relative;
+    align-items: center;
+    margin-left: 14.93px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ACACAC;
+    background-color: #fff;
+    border: none;
+
+    &::before {
+      content: url("../img/icons/arrow-back.svg");
+      position: absolute;
+      top: 3px;
+      left: -8px;
+      width: 6.93px;
+      height: 11.42px;
+    }
+  }
+
+  &--go {
+    width: 137px;
+    height: 36px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    border: none;
+    border-radius: 20px;
+    position: relative;
+
+    &::after {
+      content: url("../img/icons/arrow-go.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 7.28px;
+      height: 12px;
+      right: 35px;
+      top: 9px;
+    }
+  }
+}
+
+.label__text {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #C0C0C0;
+}
+
+.input {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  border: 1px solid #F4F4F4;
+  border-radius: 21px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    color: #C7C7C7;
+
+  }
+}
+
+
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border: 1px solid #CACACA;
+  border-radius: 4px;
+}
+
+.custom-checkbox:checked+label::before {
+  background-image: url("../img/icons/custom-checbox.svg");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
