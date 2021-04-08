@@ -1,0 +1,28 @@
+.how-it-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 143px;
+  height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 11px;
+
+  &__img {
+    margin-left: 11px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: none;
+  }
+}

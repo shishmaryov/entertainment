@@ -1,0 +1,17 @@
+.dots {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 134px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  &__item {
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(180deg, #ADADAD 0%, #8F8F8F 100%);
+    border-radius: 100%;
+  }
+}

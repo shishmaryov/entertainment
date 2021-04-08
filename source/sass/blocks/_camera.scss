@@ -1,0 +1,15 @@
+.camera {
+  height: 300px;
+  background-color: #161616;
+
+  .container {
+    margin-top: 0;
+    padding-top: 15px;
+  }
+
+  &__img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

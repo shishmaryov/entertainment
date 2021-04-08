@@ -1,0 +1,25 @@
+.enter-page {
+
+  .offer {
+    margin-bottom: 35px;
+    position: relative;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    &::before {
+      content: url("../img/icons/shield.svg");
+      width: 39.22px;
+      height: 45px;
+      position: absolute;
+      top: -15px;
+      left: 27.22px;
+    }
+  }
+
+  .button--go {
+    margin-top: 23px;
+    margin-left: calc(50% - 63.5px);
+  }
+}
