@@ -1,16 +1,45 @@
 .camera {
-  height: 315px;
+  height: 126px;
   margin-bottom: 48px;
   background-color: #161616;
+
+  &--high {
+    height: 380px;
+  }
 
   .container {
     margin-top: 0;
     padding-top: 15px;
   }
 
+  &--hidden {
+    display: none;
+    height: 125px;
+
+  }
+
+  &--active {
+    display: block;
+    height: 225px;
+    margin-top: 30px;
+  }
+
   &__img {
     display: flex;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  &__button {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 6px 30px 10px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    border: none;
+    border-radius: 20px;
   }
 }

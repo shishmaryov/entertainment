@@ -6,6 +6,8 @@
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/home.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -17,11 +19,14 @@
   <section class="camera">
     <div class="container">
       <h1 class="home-page__title animate__animated animate__fadeInDown">Наведите камеру на QR код</h1>
-      <img src="img/icons/qr.svg" alt="Наведите камеру на QR код" class="camera__img">
-      <a href="#" class="how-it-works animate__animated animate__fadeIn">
+      <button class="button camera__button">Сканировать</button>
+      <div class="camera--hidden animate__animated animate__fadeInDown">
+        <img src="img/icons/qr.svg" alt="Наведите камеру на QR код" class="camera__img">
+        <a href="#" class="how-it-works animate__animated animate__fadeIn">
         <img src="img/icons/how-it-works.svg" alt="info" class="how-it-works__img">
         <p class="how-it-works__text">Как это работает?</p>
       </a>
+      </div>
       <form action="" class="home-page__form animate__animated animate__fadeIn">
         <input type="text" name="location" placeholder="Алматы" class="home-page__select">
         <input type="text" placeholder="Искать акцию или компанию.." class="home-page__input">
