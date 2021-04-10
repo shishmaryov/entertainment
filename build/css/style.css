@@ -3639,7 +3639,7 @@ body {
           user-select: none; }
 
 .custom-checkbox + label::before {
-  content: '';
+  content: "";
   display: inline-block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -3652,10 +3652,13 @@ body {
   background-position: center center;
   background-size: 50% 50%;
   border: 1px solid #CACACA;
-  border-radius: 4px; }
+  border-radius: 3px; }
 
 .custom-checkbox:checked + label::before {
-  background-image: url("../img/icons/custom-checbox.svg"); }
+  background-image: url("../img/icons/custom-checkbox-active.svg");
+  background-size: 23px 23px;
+  border: none;
+  border-radius: 0; }
 
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus + label::before {
@@ -3672,8 +3675,8 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 215px;
   height: 179px;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
   .keyboard__item {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3682,22 +3685,43 @@ body {
     height: 39px;
     font-weight: 600;
     font-size: 35px;
+    line-height: 100%;
     vertical-align: middle;
     text-align: center;
     color: #FFFFFF;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFBA10), to(#FC7712));
     background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
-    border-radius: 8px;
-    line-height: 100%; }
+    border-radius: 8px; }
     .keyboard__item--none {
       font-size: 0;
       background: #FFF; }
     .keyboard__item--delete {
-      background: none;
-      padding-top: 5px; }
+      padding-top: 5px;
+      background: none; }
     .keyboard__item--finger {
-      background: none;
-      height: 43px; }
+      height: 43px;
+      background: none; }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  src: url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
+  font-display: swap; }
 
 .registration-1-page__inputs {
   margin-right: 21px;
@@ -3825,6 +3849,10 @@ body {
 
 .change-password-page__inputs {
   margin-top: 135px; }
+  @media (min-width: 425px) {
+    .change-password-page__inputs {
+      max-width: 425px;
+      margin-left: calc(50% - 212.5px); } }
 
 .change-password-page__input {
   width: 293px;
