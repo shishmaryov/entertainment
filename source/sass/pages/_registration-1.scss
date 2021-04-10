@@ -1,16 +1,16 @@
 .registration-1-page {
 
   &__inputs {
-    margin-left: 21px;
     margin-right: 21px;
+    margin-left: 21px;
   }
 
   &__buttons {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 22px;
     margin-bottom: 22px;
-    display: flex;
-    justify-content: space-between;
 
     .button--back {
     }

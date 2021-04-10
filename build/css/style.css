@@ -3700,35 +3700,35 @@ body {
       height: 43px; }
 
 .registration-1-page__inputs {
-  margin-left: 21px;
-  margin-right: 21px; }
+  margin-right: 21px;
+  margin-left: 21px; }
 
 .registration-1-page__buttons {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 22px;
+  margin-bottom: 22px; }
 
 .enter-page .offer {
-  margin-bottom: 35px;
   position: relative;
   width: 300px;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 35px;
+  margin-left: auto; }
   .enter-page .offer::before {
     content: url("../img/icons/shield.svg");
-    width: 39.22px;
-    height: 45px;
     position: absolute;
     top: -15px;
-    left: 27.22px; }
+    left: 27.22px;
+    width: 39.22px;
+    height: 45px; }
 
 .enter-page .button--go {
   margin-top: 23px;
@@ -3747,20 +3747,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 40px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
   border: 1px solid #F4F4F4;
   border-radius: 20px;
   -webkit-box-shadow: 0px 2px 8px 0px #000000 0.18;
-          box-shadow: 0px 2px 8px 0px #000000 0.18;
-  margin-top: 20px; }
+          box-shadow: 0px 2px 8px 0px #000000 0.18; }
   @media (min-width: 340px) {
     .home-page__form {
-      width: 340px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between; } }
+              justify-content: space-between;
+      width: 340px; } }
   .home-page__form::before {
     content: url("../img/icons/location.svg");
     position: absolute;
@@ -3807,19 +3807,19 @@ body {
     height: 23px; }
 
 .home-page .footer {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  width: 266px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 266px;
   margin-right: auto;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-left: auto; }
   .home-page .footer__link {
     text-decoration: none; }
 
@@ -3827,15 +3827,15 @@ body {
   margin-top: 135px; }
 
 .change-password-page__input {
-  font-size: 12px;
+  width: 293px;
+  width: 100%;
+  height: 42px;
+  padding-left: 22px;
   font-weight: 400;
+  font-size: 12px;
   color: #C7C7C7;
   border: 1px solid #F4F4F4;
-  width: 293px;
-  height: 42px;
-  border-radius: 25px;
-  padding-left: 22px;
-  width: 100%; }
+  border-radius: 25px; }
   .change-password-page__input::-webkit-input-placeholder {
     color: #C7C7C7; }
   .change-password-page__input::-moz-placeholder {
@@ -3854,35 +3854,35 @@ body {
     margin-bottom: 0; }
 
 .change-password-page__error {
-  font-size: 13px;
-  font-weight: 600;
-  color: #FF2E2E;
+  position: relative;
   margin-top: 10px;
   margin-bottom: 17px;
   padding-left: 31px;
-  position: relative; }
+  font-weight: 600;
+  font-size: 13px;
+  color: #FF2E2E; }
   .change-password-page__error::before {
     position: absolute;
     left: 0; }
   .change-password-page__error--new::before {
     content: url("../img/icons/lock.svg");
+    top: -6px;
     width: 20px;
-    height: 23px;
-    top: -6px; }
+    height: 23px; }
   .change-password-page__error--confirm::before {
     content: url("../img/icons/error.svg");
+    top: -2px;
     width: 18px;
-    height: 18px;
-    top: -2px; }
+    height: 18px; }
 
 .change-password-page__buttons {
-  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-top: 40px; }
   .change-password-page__buttons .button--go {
     width: 137px; }
     .change-password-page__buttons .button--go::after {
@@ -3957,8 +3957,6 @@ body {
   margin-bottom: 0; }
 
 .dots {
-  padding-left: 0;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3966,9 +3964,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 134px;
-  margin-left: auto;
   margin-right: auto;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  margin-left: auto;
+  padding-left: 0;
+  list-style: none; }
   .dots__item {
     width: 26px;
     height: 26px;
@@ -4000,8 +4000,8 @@ body {
     font-size: 15px;
     color: #686868; }
   .popup__buttons {
-    margin-left: calc(100% - 143px);
-    margin-right: 15.5px; }
+    margin-right: 15.5px;
+    margin-left: calc(100% - 150px); }
   .popup__button {
     z-index: 3;
     padding: 0;
@@ -4013,8 +4013,8 @@ body {
     .popup__button--yes {
       color: #FF5600; }
     .popup__button--no {
-      color: #A0A0A0;
-      margin-right: 26.5px; }
+      margin-right: 26.5px;
+      color: #A0A0A0; }
 
 .overlay {
   position: fixed;
@@ -4034,8 +4034,8 @@ body {
 
 .camera {
   height: 315px;
-  background-color: #161616;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  background-color: #161616; }
   .camera .container {
     margin-top: 0;
     padding-top: 15px; }
@@ -4058,12 +4058,12 @@ body {
           align-items: center;
   width: 143px;
   height: 30px;
+  margin-top: 11px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid #FFFFFF;
-  border-radius: 15px;
   text-decoration: none;
-  margin-top: 11px; }
+  border: 1px solid #FFFFFF;
+  border-radius: 15px; }
   .how-it-works__img {
     margin-left: 11px; }
   .how-it-works__text {
@@ -4077,17 +4077,17 @@ body {
     background: none; }
 
 .categories__list {
-  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding-left: 0; }
+  padding-left: 0;
+  list-style: none; }
 
 .categories__item {
   text-align: center; }
 
 .categories__text {
-  text-align: center;
-  font-size: 12px;
   font-weight: 400;
+  font-size: 12px;
+  text-align: center;
   color: #FC7813; }

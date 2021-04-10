@@ -12,17 +12,17 @@
     position: relative;
     display: flex;
     height: 40px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     background-color: #fff;
     border: 1px solid #F4F4F4;
     border-radius: 20px;
     box-shadow: 0px 2px 8px 0px #000000 0.18;
-    margin-top: 20px;
 
     @media(min-width: 340px) {
-      width: 340px;
       justify-content: space-between;
+      width: 340px;
     }
 
     &::before {
@@ -79,13 +79,13 @@
   }
 
   .footer {
-    align-items: baseline;
-    width: 266px;
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
+    align-items: baseline;
+    width: 266px;
     margin-right: auto;
     margin-bottom: 10px;
+    margin-left: auto;
 
     &__link {
       text-decoration: none;
