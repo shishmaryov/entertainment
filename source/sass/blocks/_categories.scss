@@ -1,11 +1,15 @@
 .categories {
 
   &__list {
-
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 0;
   }
 
   &__item {
-
+    text-align: center;
   }
 
   &__img {
@@ -13,6 +17,9 @@
   }
 
   &__text {
-
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FC7813;
   }
 }
