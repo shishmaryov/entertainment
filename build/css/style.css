@@ -3586,9 +3586,7 @@ body {
   .button--go::after {
     content: url("../img/icons/arrow-go.svg");
     position: absolute;
-    top: 0;
     top: 9px;
-    right: 0;
     right: 35px;
     width: 7.28px;
     height: 12px; }
@@ -3824,6 +3822,74 @@ body {
   margin-bottom: 10px; }
   .home-page .footer__link {
     text-decoration: none; }
+
+.change-password-page__inputs {
+  margin-top: 135px; }
+
+.change-password-page__input {
+  font-size: 12px;
+  font-weight: 400;
+  color: #C7C7C7;
+  border: 1px solid #F4F4F4;
+  width: 293px;
+  height: 42px;
+  border-radius: 25px;
+  padding-left: 22px;
+  width: 100%; }
+  .change-password-page__input::-webkit-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::-moz-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input:-ms-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::-ms-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input--old {
+    margin-bottom: 13px; }
+  .change-password-page__input--new {
+    margin-bottom: 0px; }
+  .change-password-page__input--confirm {
+    margin-bottom: 0; }
+
+.change-password-page__error {
+  font-size: 13px;
+  font-weight: 600;
+  color: #FF2E2E;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  padding-left: 31px;
+  position: relative; }
+  .change-password-page__error::before {
+    position: absolute;
+    left: 0; }
+  .change-password-page__error--new::before {
+    content: url("../img/icons/lock.svg");
+    width: 20px;
+    height: 23px;
+    top: -6px; }
+  .change-password-page__error--confirm::before {
+    content: url("../img/icons/error.svg");
+    width: 18px;
+    height: 18px;
+    top: -2px; }
+
+.change-password-page__buttons {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .change-password-page__buttons .button--go {
+    width: 137px; }
+    .change-password-page__buttons .button--go::after {
+      top: 10px;
+      right: 18px; }
+  .change-password-page__buttons .button--back:before {
+    top: 11px; }
 
 .container {
   margin-top: 20px;
