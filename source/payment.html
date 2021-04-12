@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body class="container payment-page">
+  <h1 class="h1 animate__animated animate__fadeInLeft">Оплата</h1>
+  <h2 class="offer animate__animated animate__fadeIn">Сумма оплаты</h2>
+  <span class="payment-page__number">12500 ₸</span>
+  <form class="payment-page__form">
+    <div class="action actions__action">
+      <h3 class="action__subtitle">Метод оплаты</h3>
+      <p class="action__numer">2458</p>
+      <p class="action__warning">-12250</p>
+      <button class="action__button">
+        <img src="img/icons/arrow-down.svg" alt="Сменить способ оплаты">
+      </button>
+    </div>
+    <div class="action actions__action">
+      <h3 class="action__subtitle">Потратить баланс</h3>
+      <p class="action__numer">250₸</p>
+      <p class="action__warning">-250</p>
+      <input type="checkbox" name="use-balance" class="action__button action__button--checkbox">
+    </div>
+    <div class="action actions__action">
+      <h3 class="action__subtitle">Применить скидку</h3>
+      <p class="action__numer">-50%</p>
+      <p class="action__warning">-6125</p>
+      <input type="checkbox" name="use-code" class="action__button action__button--checkbox">
+    </div>
+    <button type="submit" class="button button--green">оплатить</button>
+    <button class="button button--back">вернуться</button>
+  </form>
+  <div class="slider">
+    <h2 class="slider__title">Выиграйте один из призов</h2>
+    <div class="slide slider__item">
+      <p class="slide__text">Пицца до 50000₸</p>
+    </div>
+  </div>
+  <footer class="footer container  animate__animated animate__fadeInUp">
+    <a href="gifts.html" class="footer__link">
+      <img src="img/icons/footer-gift.svg" alt="Подарок" class="footer__icon">
+    </a>
+    <a href="home.html" class="footer__link">
+      <img src="img/icons/footer-qr.svg" alt="QR код" class="footer__icon">
+    </a>
+    <a href="profile.html" class="footer__link">
+      <img src="img/icons/footer-user.svg" alt="Профиль" class="footer__icon">
+    </a>
+  </footer>
+  </body>
+</html>

@@ -3919,6 +3919,23 @@ body {
   .change-password-page__buttons .button--back:before {
     top: 11px; }
 
+.payment-page .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 266px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto; }
+  .payment-page .footer__link {
+    text-decoration: none; }
+
 .container {
   margin-top: 20px;
   margin-right: auto;
