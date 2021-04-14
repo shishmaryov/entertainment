@@ -82,6 +82,32 @@ body {
       height: 12px;
     }
   }
+
+  &--green {
+    position: relative;
+    padding-top: 6px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 27px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #4BE14A 0%, #0DB715 100%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(51, 202, 37, 1);
+
+
+    &::after {
+      content: url("../img/icons/arrow-go.svg");
+      position: absolute;
+      top: 8px;
+      right: 20px;
+      width: 7.28px;
+      height: 12px;
+    }
+
+  }
 }
 
 .label__text {

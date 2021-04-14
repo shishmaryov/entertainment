@@ -3,6 +3,11 @@
   &__inputs {
     margin-right: 21px;
     margin-left: 21px;
+
+    @media(min-width: 425px) {
+      max-width: 425px;
+      margin-left: calc(50% - 212.5px);
+    }
   }
 
   &__buttons {
