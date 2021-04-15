@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 266px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+
+  &__link {
+    text-decoration: none;
+  }
+}

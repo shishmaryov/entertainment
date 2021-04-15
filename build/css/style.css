@@ -4308,6 +4308,23 @@ body {
     .container {
       max-width: 1140px; } }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 266px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto; }
+  .footer__link {
+    text-decoration: none; }
+
 .offer {
   margin-top: 118px;
   margin-bottom: 26px;
