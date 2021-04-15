@@ -17,7 +17,7 @@
     background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
     background-image: url("../img/bg/thanks-banner.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
 
     &__title {
@@ -52,7 +52,7 @@
       margin-top: 10px;
       margin-bottom: 33px;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 13px;
       text-align: center;
       color: #717171;
     }
@@ -86,13 +86,15 @@
       margin-left: auto;
       margin-right: auto;
 
-      &__question {
-        text-align: center;
-        font-size: 14px;
-        font-weight: 700;
-        color: #717171;
-        margin-bottom: 10px;
-        margin-top: 0;
+      .buttons {
+        &__question {
+          text-align: center;
+          font-size: 14px;
+          font-weight: 700;
+          color: #717171;
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
       }
 
       .button {
