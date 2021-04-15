@@ -3686,6 +3686,16 @@ body {
     width: 7.28px;
     height: 12px; }
 
+.button--grey {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: #C7C7C7; }
+
 .label__text {
   margin-top: 0;
   margin-bottom: 5px;
@@ -4036,6 +4046,9 @@ body {
   /* Клонированный слайд */
   /* Активная точка */
   /* Элемент точки */ }
+  .payment-page .offer {
+    margin-top: 75px;
+    margin-bottom: 0px; }
   .payment-page__number {
     margin-top: 0;
     margin-bottom: 4px;
@@ -4167,6 +4180,119 @@ body {
     margin-left: auto; }
     .payment-page .footer__link {
       text-decoration: none; }
+
+.thanks-page .button--grey {
+  padding-right: 31px;
+  padding-left: 31px; }
+
+.thanks-page .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 307px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFBA10), to(#FC7712));
+  background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+  background-image: url("../img/bg/thanks-banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px; }
+  .thanks-page .banner__title {
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #FE9C11; }
+  .thanks-page .banner__text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 29px;
+    color: #ffffff; }
+
+.thanks-page .thanks__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 89px;
+  height: 89px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
+
+.thanks-page .thanks__offer {
+  margin-top: 10px;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #717171; }
+
+.thanks-page .thanks__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #17D200; }
+
+.thanks-page .thanks__number {
+  margin-top: 0;
+  margin-bottom: 33px;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: #17D200; }
+
+.thanks-page .thanks .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.thanks-page .thanks__buttons {
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto; }
+  .thanks-page .thanks__buttons__question {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #717171;
+    margin-bottom: 10px;
+    margin-top: 0; }
+  .thanks-page .thanks__buttons .button--green {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: calc(100% - 173px); }
+    .thanks-page .thanks__buttons .button--green::after {
+      content: "";
+      width: 0;
+      height: 0; }
+  .thanks-page .thanks__buttons .button--grey-big {
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 29px;
+    padding-right: 29px; }
+
+.thanks-page .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 5px; }
 
 .container {
   margin-top: 20px;

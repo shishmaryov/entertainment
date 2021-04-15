@@ -1,0 +1,132 @@
+.thanks-page {
+
+
+  .button--grey {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .banner {
+    display: flex;
+    width: 307px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 15px;
+    padding-left: 25px;
+    background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+    background-image: url("../img/bg/thanks-banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+
+    &__title {
+      margin-bottom: 11px;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      color: #FE9C11;
+    }
+
+    &__text {
+      margin: 0;
+      font-weight: 700;
+      font-size: 29px;
+      color: #ffffff;
+    }
+  }
+
+  .thanks {
+
+    &__check {
+      display: flex;
+      width: 89px;
+      height: 89px;
+      margin-top: 40px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    &__offer {
+      margin-top: 10px;
+      margin-bottom: 33px;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #717171;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #17D200;
+    }
+
+    &__number {
+      margin-top: 0;
+      margin-bottom: 33px;
+      font-weight: 700;
+      font-size: 28px;
+      text-align: center;
+      color: #17D200;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__buttons {
+      width: 206px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &__question {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #717171;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+
+      .button {
+
+        &--green {
+          padding-left: 35px;
+          padding-right: 35px;
+          margin-right: calc(100% - 173px);
+
+          &::after {
+            content: "";
+            width: 0;
+            height: 0;
+          }
+        }
+
+        &--grey {
+
+          &-big {
+            margin-top: 10px;
+            width: 100%;
+            padding-left: 29px;
+            padding-right: 29px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: baseline;
+    margin-bottom: 5px;
+  }
+}
