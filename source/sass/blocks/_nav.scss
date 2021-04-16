@@ -1,14 +1,16 @@
 .nav {
 
   &__link {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
     color: #717171;
     text-transform: uppercase;
     text-decoration: none;
 
-    &__active {
-      background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    &--active {
+      color: transparent;
+      background-image: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+      background-clip: text;
     }
   }
 }

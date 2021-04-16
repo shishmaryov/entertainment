@@ -7,44 +7,107 @@
   }
 
   .header {
+    @media(max-width: 375px) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__categories {
+      margin-right: 3px;
+      position: relative;
+      display: none;
 
+      @media(min-width: 375px) {
+        display: flex;
+      }
+    }
+
+    &__geo {
+      display: none;
+
+      @media(min-width: 375px) {
+        display: flex;
+      }
     }
 
     &__nav {
-
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      width: calc(100% - 68px);
+      margin-left: 10px;
+
+      @media(max-width: 375px) {
+        width: 100%;
+      }
     }
 }
 
 .nav {
 
   &__link {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
     color: #717171;
     text-transform: uppercase;
     text-decoration: none;
 
-    &__active {
-      background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    &--active {
+      color: transparent;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        right: 0;
+        width: 136px;
+        height: 5px;
+        background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+        border-radius: 5px;
+
+        @media(max-width: 375px) {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
   .prizes__item {
-
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
   }
 
   .prize {
+
+    &--1 {
+      border-top: none;
+    }
+
+    &--end {
+      border-bottom: none;
+    }
+
 
     &__company {
 
     }
 
     &__info {
+      margin-left: 23px;
+    }
 
+    &__text {
+      font-size: 15px;
+      font-weight: 400;
+      color: #717171;
+      margin-top: 0;
     }
 
     &__slider {
@@ -55,11 +118,16 @@
   .company {
 
     &__logo {
-
+      width: 89px;
+      height: 89px;
     }
 
     &__title {
-
+      font-size: 19px;
+      color: #717171;
+      font-weight: 700;
+      margin-top: 7px;
+      margin-bottom: 14px;
     }
   }
 
@@ -95,12 +163,18 @@
     width: 30px; /* ширина переключателя */
     height: 18px; /* высота переключателя */
     margin: 0;
+    margin-right: 4px;
     padding: 0;
     background: #bfbfbf; /* цвет фона */
     border: none;
     border-radius: 12px; /* радиус скругления */
     cursor: pointer;
     transition-duration: 300ms; /* анимация */
+    display: none;
+
+      @media(min-width: 375px) {
+        display: flex;
+      }
   }
   .switch-btn::after {
       content: "";
@@ -115,10 +189,10 @@
       transition-duration: 300ms; /* анимация */
   }
   .switch-on {
-      background: #B6FFB8;
+      background: #ECECEC;
   }
   .switch-on::after {
       right: 0px;
-      background: #18BE1E;
+      background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
   }
 }
