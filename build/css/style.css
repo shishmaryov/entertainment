@@ -4272,16 +4272,19 @@ body {
   .thanks-page .thanks__buttons .button--green {
     padding-left: 35px;
     padding-right: 35px;
-    margin-right: calc(100% - 173px); }
+    margin-right: calc(100% - 173px);
+    text-decoration: none; }
     .thanks-page .thanks__buttons .button--green::after {
       content: "";
       width: 0;
       height: 0; }
-  .thanks-page .thanks__buttons .button--grey-big {
-    margin-top: 10px;
-    width: 100%;
-    padding-left: 29px;
-    padding-right: 29px; }
+  .thanks-page .thanks__buttons .button--grey {
+    text-decoration: none; }
+    .thanks-page .thanks__buttons .button--grey-big {
+      margin-top: 10px;
+      width: 100%;
+      padding-left: 29px;
+      padding-right: 29px; }
 
 .thanks-page .footer {
   display: -webkit-box;

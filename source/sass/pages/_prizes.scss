@@ -13,24 +13,24 @@
     border-radius: 12px; /* радиус скругления */
     cursor: pointer;
     transition-duration: 300ms; /* анимация */
-}
-.switch-btn::after {
-    content: "";
-    position: absolute;
-    top: -1px; /* положение кнопки по вертикали относительно основы */
-    right: 12px; /* положение кнопки по горизонтали относительно основы */
-    z-index: 1;
-    width: 21px; /* ширина кнопки */
-    height: 20px; /* высота кнопки */
-    background:#F0F0F0;; /* цвет кнопки */
-    border-radius: 18px; /* радиус кнопки */
-    transition-duration: 300ms; /* анимация */
-}
-.switch-on {
-    background: #B6FFB8;
-}
-.switch-on::after {
-    right: 0px;
-    background: #18BE1E;
-}
+  }
+  .switch-btn::after {
+      content: "";
+      position: absolute;
+      top: -1px; /* положение кнопки по вертикали относительно основы */
+      right: 12px; /* положение кнопки по горизонтали относительно основы */
+      z-index: 1;
+      width: 21px; /* ширина кнопки */
+      height: 20px; /* высота кнопки */
+      background:#F0F0F0;; /* цвет кнопки */
+      border-radius: 18px; /* радиус кнопки */
+      transition-duration: 300ms; /* анимация */
+  }
+  .switch-on {
+      background: #B6FFB8;
+  }
+  .switch-on::after {
+      right: 0px;
+      background: #18BE1E;
+  }
 }

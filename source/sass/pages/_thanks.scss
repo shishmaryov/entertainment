@@ -107,6 +107,7 @@
           padding-left: 35px;
           padding-right: 35px;
           margin-right: calc(100% - 173px);
+          text-decoration: none;
 
           &::after {
             content: "";
@@ -116,6 +117,7 @@
         }
 
         &--grey {
+          text-decoration: none;
 
           &-big {
             margin-top: 10px;
