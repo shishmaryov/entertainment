@@ -35,6 +35,13 @@
     }
   }
 
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+  }
+
   .thanks {
 
     &__check {
@@ -76,13 +83,6 @@
       font-size: 28px;
       text-align: center;
       color: #17D200;
-    }
-
-    .flex {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-
     }
 
     &__buttons {

@@ -4209,6 +4209,16 @@ body {
     font-size: 29px;
     color: #ffffff; }
 
+.thanks-page .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
 .thanks-page .thanks__check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4247,16 +4257,6 @@ body {
   font-size: 28px;
   text-align: center;
   color: #17D200; }
-
-.thanks-page .thanks .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
 
 .thanks-page .thanks__buttons {
   width: 206px;
