@@ -3800,7 +3800,7 @@ body {
     border-radius: 8px; }
     .keyboard__item--none {
       font-size: 0;
-      background: #FFF; }
+      background: transparent; }
     .keyboard__item--delete {
       padding-top: 5px;
       background: none; }
