@@ -1,0 +1,36 @@
+.prizes-page {
+
+  .switch-btn {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 30px; /* ширина переключателя */
+    height: 18px; /* высота переключателя */
+    margin: 0;
+    padding: 0;
+    background: #bfbfbf; /* цвет фона */
+    border: none;
+    border-radius: 12px; /* радиус скругления */
+    cursor: pointer;
+    transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    position: absolute;
+    top: -1px; /* положение кнопки по вертикали относительно основы */
+    right: 12px; /* положение кнопки по горизонтали относительно основы */
+    z-index: 1;
+    width: 21px; /* ширина кнопки */
+    height: 20px; /* высота кнопки */
+    background:#F0F0F0;; /* цвет кнопки */
+    border-radius: 18px; /* радиус кнопки */
+    transition-duration: 300ms; /* анимация */
+}
+.switch-on {
+    background: #B6FFB8;
+}
+.switch-on::after {
+    right: 0px;
+    background: #18BE1E;
+}
+}
