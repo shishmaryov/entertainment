@@ -1,5 +1,93 @@
 .prizes-page {
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  .header {
+
+    &__categories {
+
+    }
+
+    &__nav {
+
+      align-items: center;
+    }
+}
+
+.nav {
+
+  &__link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #717171;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &__active {
+      background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%);
+    }
+  }
+}
+
+  .prizes__item {
+
+  }
+
+  .prize {
+
+    &__company {
+
+    }
+
+    &__info {
+
+    }
+
+    &__slider {
+
+    }
+  }
+
+  .company {
+
+    &__logo {
+
+    }
+
+    &__title {
+
+    }
+  }
+
+  .slider {
+
+    &__item {
+
+    }
+  }
+
+  .slide {
+
+    &__text {
+
+    }
+  }
+
+  .footer {
+
+    &__link {
+
+    }
+
+    &__icon {
+
+    }
+  }
+
   .switch-btn {
     position: relative;
     z-index: 0;

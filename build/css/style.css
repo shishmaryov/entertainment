@@ -4272,14 +4272,15 @@ body {
   .thanks-page .thanks__buttons .button--green {
     padding-left: 35px;
     padding-right: 35px;
-    margin-right: calc(100% - 173px);
-    text-decoration: none; }
+    text-decoration: none;
+    width: 85px; }
     .thanks-page .thanks__buttons .button--green::after {
       content: "";
       width: 0;
       height: 0; }
   .thanks-page .thanks__buttons .button--grey {
-    text-decoration: none; }
+    text-decoration: none;
+    width: 85px; }
     .thanks-page .thanks__buttons .button--grey-big {
       margin-top: 10px;
       width: 100%;
@@ -4298,6 +4299,30 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 5px; }
+
+.prizes-page__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px; }
+
+.prizes-page .header__nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.prizes-page .nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #717171;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .prizes-page .nav__link__active {
+    background: -webkit-gradient(linear, right top, left top, from(#FFBA10), to(#FC7712));
+    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%); }
 
 .prizes-page .switch-btn {
   position: relative;
@@ -4665,3 +4690,13 @@ body {
     padding: 0;
     background-color: transparent;
     cursor: pointer; }
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #717171;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .nav__link__active {
+    background: -webkit-gradient(linear, right top, left top, from(#FFBA10), to(#FC7712));
+    background: linear-gradient(270deg, #FFBA10 0%, #FC7712 100%); }
