@@ -2,27 +2,6 @@
 #new-password
 #confirnm-password
 */
-$(".change-password-page__inputs").validate({
-  rules: {
-    oldPassword: {
-      required: true,
-      minlength: 6
-    },
-    newPassword: {
-      required: true,
-      minlength: 6
-    }
-  },
-  messages: {
-    oldPassword: {
-      required: "Поле email обязательно для заполнения",
-    },
-    newPassword: {
-      required: "Поле имя обязательно для заполнения",
-      minlength: jQuery.validator.format("Длина имени должна быть больше 5-ти символов")
-    }
-  }
-});
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('.change-password-page__inputs');
@@ -32,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
 
     let error = formValidate(form);
+
+    if (error==0){
+
+    } else {
+      alert('Заполните обязательные поля');
+    }
   }
 
   function formValidate(form) {
@@ -46,12 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (input.value === '') {
           formAddError(input);
           error++;
-          $('.change-password-page__error--new').toggleClass('change-password-page__error--new-active');
+          $('change-password-page__input--old').toggleClass('change-password-page__input--old-active');
         }
       }
 
 
     }
+    return error;
   }
   function formAddError(input) {
     input.parentElement.classList.add('_error');

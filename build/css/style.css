@@ -3969,6 +3969,39 @@ body {
       max-width: 425px;
       margin-left: calc(50% - 212.5px); } }
 
+.change-password-page__input {
+  width: 293px;
+  width: 100%;
+  height: 42px;
+  padding-left: 22px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #C7C7C7;
+  border: 1px solid #F4F4F4;
+  border-radius: 25px; }
+  .change-password-page__input::-webkit-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::-moz-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input:-ms-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::-ms-input-placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input::placeholder {
+    color: #C7C7C7; }
+  .change-password-page__input--old {
+    margin-bottom: 13px; }
+    .change-password-page__input--old--error {
+      border: 3px solid red; }
+  .change-password-page__input--new {
+    margin-bottom: 0px; }
+    .change-password-page__input--new--error {
+      border: 3px solid red; }
+  .change-password-page__input--confirm {
+    margin-bottom: 0; }
+    .change-password-page__input--confirm--error {
+      border: 3px solid red; }
+
 .change-password-page__error {
   display: none;
   position: relative;
@@ -3983,32 +4016,6 @@ body {
   .change-password-page__error::before {
     position: absolute;
     left: 0; }
-  .change-password-page__error__input {
-    width: 293px;
-    width: 100%;
-    height: 42px;
-    padding-left: 22px;
-    font-weight: 400;
-    font-size: 12px;
-    color: #C7C7C7;
-    border: 1px solid #F4F4F4;
-    border-radius: 25px; }
-    .change-password-page__error__input::-webkit-input-placeholder {
-      color: #C7C7C7; }
-    .change-password-page__error__input::-moz-placeholder {
-      color: #C7C7C7; }
-    .change-password-page__error__input:-ms-input-placeholder {
-      color: #C7C7C7; }
-    .change-password-page__error__input::-ms-input-placeholder {
-      color: #C7C7C7; }
-    .change-password-page__error__input::placeholder {
-      color: #C7C7C7; }
-    .change-password-page__error__input--old {
-      margin-bottom: 13px; }
-    .change-password-page__error__input--new {
-      margin-bottom: 0px; }
-    .change-password-page__error__input--confirm {
-      margin-bottom: 0; }
   .change-password-page__error--new::before {
     content: url("../img/icons/lock.svg");
     top: -6px;
