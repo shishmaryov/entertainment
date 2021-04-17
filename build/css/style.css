@@ -4709,6 +4709,9 @@ body {
   text-align: center;
   color: #FC7813; }
 
+.categories__link {
+  text-decoration: none; }
+
 .actions {
   width: 215px;
   margin-bottom: 9px;
