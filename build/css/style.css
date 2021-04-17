@@ -3991,19 +3991,12 @@ body {
     color: #C7C7C7; }
   .change-password-page__input--old {
     margin-bottom: 13px; }
-    .change-password-page__input--old--error {
-      border: 3px solid red; }
   .change-password-page__input--new {
     margin-bottom: 0px; }
-    .change-password-page__input--new--error {
-      border: 3px solid red; }
   .change-password-page__input--confirm {
     margin-bottom: 0; }
-    .change-password-page__input--confirm--error {
-      border: 3px solid red; }
 
 .change-password-page__error {
-  display: none;
   position: relative;
   margin-top: 10px;
   margin-bottom: 17px;
@@ -4011,8 +4004,6 @@ body {
   font-weight: 600;
   font-size: 13px;
   color: #FF2E2E; }
-  .change-password-page__error--new-active {
-    display: block; }
   .change-password-page__error::before {
     position: absolute;
     left: 0; }
