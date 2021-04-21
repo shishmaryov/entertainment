@@ -17,7 +17,6 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -3687,14 +3686,14 @@ body {
     height: 12px; }
 
 .button--grey {
-  font-size: 13px;
-  font-weight: 700;
-  color: #FFFFFF;
   padding-top: 6px;
   padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #C7C7C7;
   border: none;
-  border-radius: 20px;
-  background-color: #C7C7C7; }
+  border-radius: 20px; }
 
 .label__text {
   margin-top: 0;
@@ -3786,7 +3785,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: none;
     width: 65px;
     height: 39px;
     font-weight: 600;
@@ -3797,6 +3795,7 @@ body {
     color: #FFFFFF;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFBA10), to(#FC7712));
     background: linear-gradient(180deg, #FFBA10 0%, #FC7712 100%);
+    border: none;
     border-radius: 8px; }
     .keyboard__item--none {
       font-size: 0;

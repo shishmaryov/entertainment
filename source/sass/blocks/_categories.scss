@@ -4,24 +4,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
     padding-left: 0;
     list-style: none;
+    justify-items: center;
   }
 
   &__item {
-    text-align: center;
     max-width: 75px;
+    text-align: center;
     border: 1px solid transparent;
 
-  &:active {
-    border: 1px solid #FC7813;
-  }
+    &:active {
+      border: 1px solid #FC7813;
+    }
   }
 
-  &__img {
-
-  }
+  &__img {}
 
   &__text {
     font-weight: 400;
