@@ -4703,7 +4703,8 @@ body {
 
 .categories__item {
   text-align: center;
-  max-width: 75px; }
+  max-width: 75px;
+  border: 1px solid transparent; }
   .categories__item:active {
     border: 1px solid #FC7813; }
 
